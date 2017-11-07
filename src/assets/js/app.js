@@ -10,3 +10,8 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+$("[data-menu-underline-from-center] a").addClass("underline-from-center"); 
+
+//Orbit Carousel
+
