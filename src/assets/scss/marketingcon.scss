@@ -26,7 +26,7 @@
     padding: 1rem;
     flex: 1 0 100%;
     align-self: stretch;
-    background: #457180;
+    //background:;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,4 +45,5 @@
 
 .marketing-site-content-section-block-subheader {
   font-size: 13px;
+  color:$white;
 }
