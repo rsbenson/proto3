@@ -3,10 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'hero';
-@import 'nav';
-@import 'marketingcon';
-@import 'ex4';
+
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -61,3 +58,9 @@
 @include orbit-container;
 @include orbit-slide;
 @include orbit-caption;
+
+
+@import 'nav';
+@import 'marketingcon';
+@import 'generalcolors';
+@import 'hero';

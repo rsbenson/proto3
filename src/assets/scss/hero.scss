@@ -1,9 +1,9 @@
-$hero-full-screen-bg: url('http://www.csbj.com/wp-content/uploads/2015/07/fort-carson-from-helicopter.jpg') center center no-repeat;
+$hero-full-screen-bg: url('https://i2.wp.com/rightandup.com/wp-content/uploads/2017/10/Colorado-Springs.jpg?resize=1170%2C748') center center no-repeat;
 $hero-full-screen-bg-size: cover;
 $hero-full-screen-text-color: $white;
 
 .hero-full-screen {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
