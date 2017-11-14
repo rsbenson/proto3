@@ -6,7 +6,6 @@
     border-radius: 5000px;
     text-transform: uppercase;
     margin-bottom: 0;
-    background:$warning-color;
   }
 
   .marketing-site-content-section-img {
@@ -26,7 +25,7 @@
     padding: 1rem;
     flex: 1 0 100%;
     align-self: stretch;
-    //background:;
+    background: $light-gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,5 +44,4 @@
 
 .marketing-site-content-section-block-subheader {
   font-size: 13px;
-  color:$white;
 }
