@@ -1,4 +1,4 @@
-$menu-underline-from-center-bg: #2C3840;
+$menu-underline-from-center-bg:$black;
 $menu-underline-from-center-border-thickness: 0.125rem;
 
 .hover-underline-menu {
@@ -8,7 +8,7 @@ $menu-underline-from-center-border-thickness: 0.125rem;
     background-color: $menu-underline-from-center-bg;
 
     a {
-      color: $white;
+      color: $warning-color;
       padding: 1.2rem 1.5rem;
     }
 

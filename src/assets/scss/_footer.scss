@@ -1,9 +1,16 @@
 footer{
     
-    background-color:#457180;
+    background-color:$white;
     border: 1px solid rgba($black, 0.25);
     margin: 0 0 1rem 0;
     padding: 1rem;
-    color: $medium-gray;
+    color: $black;
     border-radius: $global-radius;
+
+    a{
+        color:$black;
+    }
+    a:hover{
+        color:$warning-color;
+    }
 }
