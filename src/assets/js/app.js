@@ -13,8 +13,7 @@ $(document).foundation();
 
 $("[data-menu-underline-from-center] a").addClass("underline-from-center"); 
 
-//Orbit Carousel
 
-$("div.reporting".feedMe()
-
-)
+$("div.reporting").feedMe({
+    category : 7923 
+});
