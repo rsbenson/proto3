@@ -2,6 +2,16 @@ $hero-full-screen-bg: url('https://i2.wp.com/rightandup.com/wp-content/uploads/2
 $hero-full-screen-bg-size: cover;
 $hero-full-screen-text-color: $white;
 
+// .hero-banner{
+// background:#1f494d;
+
+// }
+
+// .hero-banner img{
+// mix-blend-mode: multiply;
+// filter: grayscale(100%);
+// }
+
 .hero-full-screen {
   height: 60vh;
   display: flex;
@@ -10,10 +20,15 @@ $hero-full-screen-text-color: $white;
   justify-content: space-between;
   background: $hero-full-screen-bg;
   background-size: $hero-full-screen-bg-size;
+  // mix-blend-mode: multiply;
+  // filter: grayscale(100%);
 
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
+    text-shadow: 1px 1px 7px black;
+    // mix-blend-mode: multiply;
+    // filter: grayscale(100%);
   }
 
   .top-content-section {
@@ -22,6 +37,7 @@ $hero-full-screen-text-color: $white;
 
   .bottom-content-section {
     padding: 1rem;
+    width:500px;
 
     svg {
       height: rem-calc(60);
@@ -104,70 +120,6 @@ $clean-hero-slider-accent: $warning-color;
         font-weight: normal;
       }
     }
-  }
-
-  .orbit-slide {
-    padding-bottom: 40%;
-    background: $black;
-
-    @include breakpoint(medium) {
-      padding-bottom: 0;
-    }
-  }
-
-  .orbit-controls {
-    button {
-      background: $clean-hero-slider-accent;
-      padding: 1rem 0.5rem;
-
-      &:hover {
-        background: $white;
-        color: $black;
-      }
-    }
-
-    .orbit-previous {
-      @include breakpoint(medium) {
-        left: auto;
-        right: 2.4rem;
-      }
-    }
-
-    .orbit-next {
-      @include breakpoint(medium) {
-        right: 0.5rem;
-      }
-    }
-  }
-
-  .orbit-bullets {
-    display: none;
-
-    @include breakpoint(medium) {
-      display: block;
-      margin-bottom: 0;
-      margin-top: -3rem;
-      background: none;
-    }
-
-    button {
-      width: 3rem;
-      height: 0.4rem;
-      border-radius: 0;
-      background-color: $white;
-
-      &.is-active {
-        background-color: $clean-hero-slider-accent;
-      }
-    }
-  }
-
-  ul.orbit-container {
-    height: auto !important;
-  }
-
-  li.orbit-slide {
-    max-height: none !important;
   }
 }
 
