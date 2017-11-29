@@ -26,7 +26,12 @@ $hero-full-screen-text-color: $white;
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
-    text-shadow: 1px 1px 7px black;
+      h1, h2{
+      text-shadow: 1px 1px 7px black;
+      }
+      .reporting{
+        width:600px;
+      }
     // mix-blend-mode: multiply;
     // filter: grayscale(100%);
   }
