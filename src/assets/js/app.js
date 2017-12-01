@@ -17,3 +17,9 @@ $("[data-menu-underline-from-center] a").addClass("underline-from-center");
 $("div.reporting").feedMe({
     category : 7923 
 });
+
+$("#news").feedMe({
+    category:3,
+    quantity:2,
+    imgSize:"small",
+});
