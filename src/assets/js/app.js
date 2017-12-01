@@ -18,6 +18,10 @@ $("div.reporting").feedMe({
     category : 7923 
 });
 
+$("div.news").feedMe({
+    category : 7924 
+});
+
 $("#news").feedMe({
     category:3,
     quantity:2,
