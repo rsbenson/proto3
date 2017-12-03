@@ -1,5 +1,18 @@
-<div class="hero-full-screen show-for-large">
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+  <ul class="menu vertical">
+    <li><a href="#">Units</a></li>
+    <li><a href="#">Organizations</a></li>
+    <li><a href="#">Newcomers</a></li>
+    <li><a href="#">Calendar and More</a></li>
+    <li><a href="#">Fort Carson Services</a></li>
+  </ul>
+  <button class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
+
+<div class="hero-full-screen show-for-medium">
   <div class="top-content-section">
     <div class="top-bar">
       <div class="top-bar-left">
@@ -14,31 +27,32 @@
             <img src="{{root}}assets/img/FortCarsonLogo.png" alt="logo">
           </li>
         </ul>
+
+      </div>
+      <div class="top-bar-right hamburger">
+        <button class="menu-icon" type="button" data-open="offCanvas"></button>
       </div>
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-x">
-      <div class="cell large-7">
-        <div class="middle-content-section">
-          <h1 style="text-align:left;">Welcome to Fort Carson</h1>
-          <h3 style="text-align:left;">The Best Hometown in the Army!</h3>
-          <div class="grid-container">
-              <div class="cell callout reporting">
-                <div class="hide" data-feed-template>
-                  <div data-feed-content></div>
-                </div>
-              </div>
-            </div>
-
+  <!-- <div class="grid-container"> -->
+  <div class="grid-x">
+    <div class="cell large-7">
+      <div class="middle-content-section">
+        <h1 style="text-align:left;">Welcome to Fort Carson</h1>
+        <h3 style="text-align:left;">The Best Hometown in the Army!</h3>
+        <div class="cell callout reporting" style="width:500px;">
+          <div class="hide" data-feed-template>
+            <div data-feed-content></div>
+          </div>
         </div>
       </div>
-      <div class="cell large-5">
-        <iframe width="400" height="300" src="https://www.youtube.com/embed/BxvaGXlb-xo" frameborder="0" gesture="media" allow="encrypted-media"
-          allowfullscreen></iframe>
-      </div>
+    </div>
+    <div class="cell large-5">
+      <iframe width="450" height="300" src="https://www.youtube.com/embed/BxvaGXlb-xo" frameborder="0" gesture="media" allow="encrypted-media"
+        allowfullscreen></iframe>
     </div>
   </div>
+  <!-- </div> -->
   <div class="bottom-content-section" data-magellan data-threshold="0">
 
   </div>
@@ -62,7 +76,26 @@
     </li>
   </ul>
 </nav>
+<div class="grid-x units">
+  <div class="cell">
+    <a href="#"><img src="{{root}}assets/img/crests/1-4Crest.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/2IBCT.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/4ID-3BCT.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/4ID-4CAB-Crest.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/4SB.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/DIVARTY.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/HHBN.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/FortCarsonMEDDAC.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/dencom_logo.jpg"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/10thSFG.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/4thENGBTN_Crest.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/759thMPBTN_Crest.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/71eod.png"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/13thASOS.jpg"/></a>
+    <a href="#"><img src="{{root}}assets/img/crests/10thCSH.png"/></a>
 
+  </div>
+</div>
 <div id="main-content-section" data-magellan-target="main-content-section">
   <div class="marketing-site-content-section">
     <div class="marketing-site-content-section-block">
@@ -88,7 +121,7 @@
       <img src="http://images.balfourbeattycommunities.com/ImageGen.ashx?image=/media/1514028/carson_eggtoss.jpg&width=600&height=350&pad=false&crop=resize"
         alt="" />
     </div>
-    <div class="marketing-site-content-section-block">
+    <div class="marketing-site-content-section-block cb">
       <div class="grid-container">
         <h3 class="marketing-site-content-section-block-header" style="font-size:36px;">Community</h3>
         <div class="large button-group">
@@ -101,7 +134,7 @@
     </div>
     <div class="marketing-site-content-section-block small-order-2 medium-order-1">
       <h3 class="marketing-site-content-section-block-header">Resources</h3>
-      <p class="marketing-site-content-section-block-subheader subheader">Fort Carson has numerous resources for soldiers and their families to include financial assistance, employment readiness
+      <p class="marketing-site-content-section-block-subheader">Fort Carson has numerous resources for soldiers and their families to include financial assistance, employment readiness
         and wellness. All the things needed to assist our soldiers and families with being R.E.A.D.Y</p>
       <a href="#" class="round button small">learn more</a>
     </div>
