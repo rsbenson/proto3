@@ -22,8 +22,8 @@ $("div.news").feedMe({
     category : 7924 
 });
 
-$("#news").feedMe({
-    category:3,
-    quantity:2,
-    imgSize:"small",
-});
+$('.news-events').feedMe({
+    category : 3,
+    quantity : 12,
+    imgSize : 'medium_large'
+  });
