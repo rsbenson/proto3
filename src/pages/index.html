@@ -1,153 +1,270 @@
-<div class="grid-container">
-  <div class="grid-x grid-margin-x">
-    <div class="large-12 cell">
-      <h1>Welcome to Foundation for Sites</h1>
-    </div>
-  </div> 
+<div class="off-canvas position-top" id="offCanvas" data-off-canvas>
+{{> globalmenu}}
+  <button class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-  <div class="grid-x grid-margin-x">
-    <div class="large-12 cell">
-      <div class="callout">
-        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-        <p>Once you've exhausted the fun in this document, you should check out:</p>
-        <div class="grid-x grid-margin-x">
-          <div class="large-4 medium-4 cell">
-            <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-          </div>
-          <div class="large-4 medium-4 cell">
-            <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-          </div>
-          <div class="large-4 medium-4 cell">
-            <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowledge.</p>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="large-4 medium-4 medium-push-2 cell">
-            <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-          </div>
-          <div class="large-4 medium-4 medium-pull-2 cell">
-            <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-          </div>        
+
+<div class="hero-full-screen">
+  <div class="top-content-section">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">
+            <img src="{{root}}assets/img/army_star_light_background.png" alt="logo">
+          </li>
+          <li class="menu-text">
+            <img src="{{root}}assets/img/4ID_Crest_Effects.png" alt="logo">
+          </li>
+          <li class="menu-text">
+            <img src="{{root}}assets/img/FortCarsonLogo.png" alt="logo">
+          </li>
+        </ul>
+
+      </div>
+      <div class="top-bar-right"> 
+      <div class="hamburger">
+        <button class="hambutton" type="button" data-open="offCanvas"></button>
         </div>
       </div>
     </div>
   </div>
+  <div id="hero-content-wrapper">
+    <div class="grid-x">
+      <div class="cell large-7">
+        <div class="middle-content-section">
+          <h1 style="text-align:left;">Welcome to Fort Carson</h1>
+          <h3 style="text-align:left;">The Best Hometown in the Army!</h3>
 
-  <div class="grid-x grid-margin-x">
-    <div class="large-8 medium-8 cell">
-      <h5>Here&rsquo;s your basic grid:</h5>
-      <!-- Grid Example -->
+        </div>
+      </div>
+      <div class="cell large-5">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/BxvaGXlb-xo" frameborder="0" gesture="media" allow="encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <div class="bottom-content-section" data-magellan data-threshold="0">
 
-      <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-          <div class="primary callout">
-            <p><strong>This is a twelve column section in a grid-x with grid-margin-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
+  </div>
+</div>
+<div class="cell callout reporting">
+  <div class="hide" data-feed-template>
+    <div data-feed-content></div>
+  </div>
+</div>
+<div class="grid-x grid-padding-x units">
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/1sbct.html">
+      <img src="{{root}}assets/img/crests/1-4Crest.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/2ibct.html">
+      <img src="{{root}}assets/img/crests/2IBCT.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/3abct.html">
+      <img src="{{root}}assets/img/crests/4ID-3BCT.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/cab-4id.html">
+      <img src="{{root}}assets/img/crests/4ID-4CAB-Crest.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/4sb.html">
+      <img src="{{root}}assets/img/crests/4SB.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/divarty.html">
+      <img src="{{root}}assets/img/crests/DIVARTY.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/4id/unit-pages/hhbn.html">
+      <img src="{{root}}assets/img/crests/HHBN.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="https://www.evans.amedd.army.mil/">
+      <img src="{{root}}assets/img/crests/FortCarsonMEDDAC.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="https://www.evans.amedd.army.mil/dentac/">
+      <img src="{{root}}assets/img/crests/dencom_logo.jpg" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/10sfga/index.html">
+      <img src="{{root}}assets/img/crests/10thSFG.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/units/4eng/index.html">
+      <img src="{{root}}assets/img/crests/4thENGBTN_Crest.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/759thMP/">
+      <img src="{{root}}assets/img/crests/759thMPBTN_Crest.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/units/71eod/index.html">
+      <img src="{{root}}assets/img/crests/71eod.png" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/units/13asos/index.html">
+      <img src="{{root}}assets/img/crests/13thASOS.jpg" />
+    </a>
+  </div>
+  <div class="cell shrink">
+    <a href="http://www.carson.army.mil/10cshweb/">
+      <img src="{{root}}assets/img/crests/10thCSH.png" />
+    </a>
+  </div>
+</div>
+</div>
+<div id="main-content-section" data-magellan-target="main-content-section">
+  <div class="marketing-site-content-section">
+    <div class="marketing-site-content-section-block">
+      <h3>
+        <a href="http://www.fortcarsonmountaineer.com/category/news-you-need-to-know-now/">Events</a>
+      </h3>
+      <div class="card-section news">
+        <div class="hide" data-feed-template>
+          <h4 data-feed-title></h4>
+          <div data-feed-content></div>
+        </div>
+      </div>
+    </div>
+    <div class="marketing-site-content-section-img">
+      <img src="http://soldiers.dodlive.mil/files/2012/06/CarsonWildfireAssist-1.jpg" alt="" />
+    </div>
+
+    <div class="marketing-site-content-section-img">
+      <img src="http://images.balfourbeattycommunities.com/ImageGen.ashx?image=/media/1514028/carson_eggtoss.jpg&width=600&height=350&pad=false&crop=resize"
+        alt="" />
+    </div>
+    <div class="marketing-site-content-section-block cb">
+      <div class="grid-container">
+        <h3 class="marketing-site-content-section-block-header" style="font-size:36px;">Calendar and More!</h3>
+        <div class="large button-group">
+          <a class="button" href="http://www.carson.army.mil/CarsonCalendarandMore.html">Keep Yourself<br> Current Calendar</a>
+          <a class="button" href="http://www.carson.army.mil/fortcarson-2014/includes/docs/CIE%20November%20Read%20Ahead.pdf">Community Information<br> Exchange (CIE)</a>
+        </div>
+        <div class="large button-group">
+          <a class="button" href="http://www.carson.army.mil/CommunityEvents.html">Community Events & Fun Opportunites</a>
+          <a class="button" href="http://www.carson.army.mil/fortcarson-2014/includes/docs/NOV%20CIE%20ROUNDUP%20SLIDES%20WEBSITE.pdf">FRG Roundup</a>
+        </div>
+      </div>
+    </div>
+    <div class="marketing-site-content-section-block small-order-2 medium-order-1 cb">
+      <h3 class="marketing-site-content-section-block-header">Resources</h3>
+      <p class="marketing-site-content-section-block-subheader">Fort Carson has numerous resources for soldiers and their families to include financial assistance, employment readiness
+        and wellness. All the things needed to assist our soldiers and families with being R.E.A.D.Y</p>
+      <div class="large button-group">
+        <a class="button" href="https://carson.armymwr.com/categories/cys-services">School Info</a>
+        <a class="button" href="http://www.fortcarsonfamilyhomes.com/default.aspx">Housing</a>
+        <a class="button" href="https://www.evans.amedd.army.mil/">Healthcare</a>
+      </div>
+    </div>
+    <div class="marketing-site-content-section-img small-order-1 medium-order-2">
+      <img src="{{root}}assets/img/fortcarsonresources.png" alt="" />
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- News Section -->
+  <div class="grid-container">
+    <h2 class="h4">News</h2>
+    <div class="news-events grid-x grid-margin-x align-center">
+      <div class="cell hide medium-4" data-feed-template>
+        <div class="card">
+          <img data-feed-img>
+          <div class="card-section">
+            <a data-feed-link>
+              <span data-feed-title></span>
+            </a>
           </div>
         </div>
       </div>
-      <div class="grid-x grid-margin-x">
-        <div class="large-6 medium-6 cell">
-          <div class="primary callout">
-            <p>Six cell</p>
-          </div>
-        </div>
-        <div class="large-6 medium-6 cell">
-          <div class="primary callout">
-            <p>Six cell</p>
-          </div>
-        </div>
-      </div>
-      <div class="grid-x grid-margin-x">
-        <div class="large-4 medium-4 small-4 cell">
-          <div class="primary callout">
-            <p>Four cell</p>
-          </div>
-        </div>
-        <div class="large-4 medium-4 small-4 cell">
-          <div class="primary callout">
-            <p>Four cell</p>
-          </div>
-        </div>
-        <div class="large-4 medium-4 small-4 cell">
-          <div class="primary callout">
-            <p>Four cell</p>
-          </div>
-        </div>
-      </div>
-      
-      <hr />
-              
-      <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-      <form>
-        <div class="grid-x grid-margin-x">
-          <div class="large-12 cell">
-            <label>Input Label</label>
-            <input type="text" placeholder="large-12.cell" />
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="large-4 medium-4 cell">
-            <label>Input Label</label>
-            <input type="text" placeholder="large-4.cell" />
-          </div>
-          <div class="large-4 medium-4 cell">
-            <label>Input Label</label>
-            <input type="text" placeholder="large-4.cell" />
-          </div>
-          <div class="large-4 medium-4 cell">
-            <div class="grid-x grid-margin-x collapse">
-              <label>Input Label</label>
-              <div class="input-group">
-                <input class="input-group-field" type="text" placeholder="input-group" />
-                <span class="input-group-label">.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="large-12 cell">
-            <label>Select Box</label>
-            <select>
-              <option value="husker">Husker</option>
-              <option value="starbuck">Starbuck</option>
-              <option value="hotdog">Hot Dog</option>
-              <option value="apollo">Apollo</option>
-            </select>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="large-6 medium-6 cell">
-            <label>Choose Your Favorite</label>
-            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-          </div>
-          <div class="large-6 medium-6 cell">
-            <label>Check these out</label>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="large-12 cell">
-            <label>Textarea Label</label>
-            <textarea placeholder="small-12.cell"></textarea>
-          </div>
-        </div>
-      </form>
-    </div>     
-
-    <div class="large-4 medium-4 cell">
-      <h5>Try one of these buttons:</h5>
-      <p><a href="#" class="small button">Simple Button</a><br/>          
-      <a href="#" class="medium success button">Success Btn</a><br/>
-      <a href="#" class="medium alert button">Alert Btn</a><br/>
-      <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-      <div class="callout">
-        <h5>So many components, girl!</h5>
-        <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-        <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+      <div class="loading-elem">
+        <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        <span>Loading...</span>
       </div>
     </div>
   </div>
 </div>
+<footer>
+  <div class="flex-container align-center align-spaced">
+    <div class="large-3 column">
+      <ul class="menu vertical">
+        <li>
+          <a href="http://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx">Acessibility</a>
+        </li>
+        <li>
+          <a href="mailto:usarmy.carson.106-sig-bde.mbx.webmaster@mail.mil">Contact Webmaster</a>
+        </li>
+        <li>
+          <a href="http://www.esd.whs.mil/FOID/foi/">FOIA</a>
+        </li>
+      </ul>
+    </div>
+    <div class="large-3 column">
+      <ul class="menu vertical">
+        <li>
+          <a href="https://www.inscom.army.mil/isalute/default.aspx">iSalute</a>
+        </li>
+        <li>
+          <a href="https://www.usa.gov/">usa.gov</a>
+        </li>
+        <li>
+          <a href="https://www.defense.gov/">Defenselink</a>
+        </li>
+      </ul>
+    </div>
+    <div class="large-3 column">
+      <ul class="menu vertical">
+        <li>
+          <a href="http://www.carson.army.mil/priv-sec.html">Privacy & Security</a>
+        </li>
+        <li>
+          <a href="https://carson.armymwr.com/programs/fort-carson-gifts-donations">Donations</a>
+        </li>
+        <li>
+          <a href="http://ice.disa.mil/index.cfm?fa=site&site_id=437">ICE</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="large-3 column">
+      <ul class="menu vertical">
+        <li>
+          <a href="https://twitter.com/FtCarsonPAO">
+            <i class="fi-social-twitter"></i> Fort Carson Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/USArmyFortCarson">
+            <i class="fi-social-facebook"></i> Fort Carson Facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/@4thinfdiv">
+            <i class="fi-social-twitter"></i> 4ID Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/4thID/">
+            <i class="fi-social-facebook"></i> 4ID Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
