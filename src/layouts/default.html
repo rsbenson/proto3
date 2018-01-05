@@ -2,32 +2,35 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
 
 
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fort Carson</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
-  <body>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fort Carson</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-      <div class="off-canvas-content" data-off-canvas-content>
-         {{> body}}
-      </div>
+<body>
 
-      <!-- Java Scripts to Load -->
-    <script src="{{root}}assets/js/app.js"></script>
-                    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17137850-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date()); 
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+  <div class="off-canvas-content" data-off-canvas-content>
+    {{> body}}
+  </div>
 
-  gtag('config', 'UA-17137850-3');
-</script>
-  </body>
-</html> 
+  <!-- Java Scripts to Load -->
+  <script src="{{root}}assets/js/app.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17137850-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-17137850-3');
+  </script>
+</body>
+
+</html>

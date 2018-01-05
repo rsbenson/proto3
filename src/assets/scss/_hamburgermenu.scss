@@ -2,12 +2,21 @@
   padding: 10px 10px;
   border: 1px 1px black;
   border-radius:20px; 
-  background-color: white;
+  background-color:black;
   width:40px;
    
+
+
     .hambutton{
-      @include hamburger($black, $black, 20px, 16px, 2px, 3);
+      @include hamburger($white, $white, 20px, 16px, 2px, 3);
     }
+    // .hambutton:before{
+    //   font-family: Arial;
+    //   content: "MENU";
+    //   position: relative;
+    //   padding: 10px 20px 10px 5px;
+    //   color: black!important;
+    // }
 }
 
 
