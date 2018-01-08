@@ -53,6 +53,11 @@ $hero-full-screen-text-color: $white;
     padding: 1rem;
     width:500px;
 
+    .clip{
+
+      padding-left:650px; 
+    }
+
     svg {
       height: rem-calc(60);
       width: rem-calc(60);
