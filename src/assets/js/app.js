@@ -24,7 +24,7 @@ $("div.news").feedMe({
 });
 
 $('.news-events').feedMe({
-    category : 3,
+    category : 6,
     quantity : 12,
     imgSize : 'medium_large'
   });
