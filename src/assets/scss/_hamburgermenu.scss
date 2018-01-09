@@ -1,24 +1,16 @@
 .hamburger{
-  padding: 15px 10px;
-  border: 1px 1px black;
+  padding: 10px 10px;
   border-radius:20px; 
   background-color: black;
-  width:40px;
+  display:inline-block; 
    
 
 
     .hambutton{
-      @include hamburger($white, $white, 20px, 16px, 2px, 3);
+      @include hamburger($white, $white, 25px, 15px, 2px, 3);
 
     }
-    // .hambutton:after{
-    //   font-family: Arial;
-    //   content: "MENU";
-    //   position: relative;
-    //   padding: 10px 20px 10px 5px;
-    //   color: black!important;
-    // } 
-}
+  }
  
 .menutext{
   padding:10px;
