@@ -51,7 +51,7 @@ $hero-full-screen-text-color: $white;
 
   .bottom-content-section {
     padding: 1rem;
-    width:500px;
+    width:100%;
 
     .clip{
 
@@ -80,6 +80,8 @@ $hero-full-screen-text-color: $white;
     .menu li {
       display: flex;
       align-items: center;
+      padding:3px 3px;
+      display:inline-block;
     }
 
     .menu a {
