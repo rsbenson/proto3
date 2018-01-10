@@ -1,7 +1,24 @@
+.cell h4{
+
+    padding:20px 20px;
+}
+
 .units{
 background-color: #fff;
-    img{
-        padding:2px 2px;
+padding-bottom:20px;
+.card{
+    width:125px;
+}    
+.card img{
+     
+    padding:10px 25px;
+        
     }
+.card p{
+    text-align:center;
+}
+.card a:hover{
+    box-shadow: inset 0px 0px 3px black;
+}    
 
 }
