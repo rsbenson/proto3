@@ -40,7 +40,7 @@
           <h1>Welcome to Fort Carson</h1>
           <h3>The Best Hometown in the Army!</h3>
           {{/ifpage}} 
-          {{#ifpage '4ID'}}
+          {{#ifpage 'subsite'}}
           <h1>4th Infantry Division</h1>
           {{/ifpage}}
         </div>
@@ -59,9 +59,12 @@
     </div>
   </div>
 </div>
-
+{{#ifpage 'index'}}
 <div class="cell callout reporting">
+ 
   <div class="hide" data-feed-template>
     <div data-feed-content></div>
   </div>
+
 </div>
+{{/ifpage}}

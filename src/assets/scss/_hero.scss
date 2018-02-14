@@ -16,14 +16,15 @@ $hero-full-screen-text-color: $white;
     }
   }
 }
-  .hero4ID {
+  .hero-4ID {
     // height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: url('../img/4ID_banner.jpg') center center no-repeat;
+    background: url('../img/4ID_banner.jpg')no-repeat;
     background-size: cover;
+    background-position: 30% 30%; 
   
     #hero-content-wrapper{
       padding:5rem;
