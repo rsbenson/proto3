@@ -80,8 +80,6 @@ import jQuery from 'jquery';
       $.ajax(url, {
         cache: true,
         success: function (data, textStatus, jqXHR) {
-          var imgWidth;
-          var imgHeight;
           var imgSize = $.urlParam(this.url, 'imgSize');
           if (feedOutput.length < 1) {
             if (imgSize !== 'none') {
@@ -94,13 +92,12 @@ import jQuery from 'jquery';
                   'tags': val.tags,
                   'categories': val.categories
                 };
-                if (val['_embedded']['wp:featuredmedia'] !== undefined) {
-                  // todo there will be an issue if the first article doesnt have an image
-                  imgWidth = val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes'][imgSize]['width'];
-                  imgHeight = val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes'][imgSize]['height'];
-                  feedItem['imgSrc'] = val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes'][imgSize]['source_url']
+                if (val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes'][imgSize] !== undefined) {
+                  feedItem['imgSrc'] = val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes'][imgSize]['source_url'];
+                } else if (val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']['thumbnail'] !== undefined) {
+                  feedItem['imgSrc'] = val['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']['thumbnail']['source_url'];
                 } else {
-                  feedItem['imgSrc'] = 'http://via.placeholder.com/' + imgWidth + 'x' + imgHeight + '?text=No+image+available';
+                  feedItem['imgSrc'] = 'http://via.placeholder.com/150x150?text=No+image+available';
                 }
                 feedOutput.push(feedItem);
               });
