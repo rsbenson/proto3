@@ -1,0 +1,70 @@
+<div class="off-canvas position-top" id="offCanvas" data-off-canvas>
+  {{> globalmenu}}
+  <button class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="{{hero-class}}">
+  <div class="top-content-section">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <span class="hamburger">
+          <button class="hambutton" type="button" data-open="offCanvas"></button>
+
+        </span>
+        <span class="menutext">Click Here For Menu</span>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li class="menu-text">
+            <img src="{{root}}assets/img/army_star_light_background.png" alt="logo">
+          </li>
+          <li class="menu-text">
+            <img src="{{root}}assets/img/4ID_Crest_Effects.png" alt="logo">
+          </li>
+          <li class="menu-text">
+            <img src="{{root}}assets/img/FortCarsonLogo.png" alt="logo">
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  <div id="hero-content-wrapper">
+    <div class="grid-x">
+      <div class="cell large-12">
+        <div class="middle-content-section">
+          {{#ifpage 'index'}}
+          <h1>Welcome to Fort Carson</h1>
+          <h3>The Best Hometown in the Army!</h3>
+          {{/ifpage}} 
+          {{#ifpage 'subsite'}}
+          <h1>4th Infantry Division</h1>
+          {{/ifpage}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="bottom-content-section" data-magellan data-threshold="0">
+    <div class="grid-x align-right">
+      <div class="cell shrink">
+        {{#ifpage 'index'}}
+        <iframe width="300" height="175" src="https://www.youtube.com/embed/x4SNNmv1s48?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+        {{/ifpage}}
+      </div>
+    </div>
+  </div>
+</div>
+{{#ifpage 'index'}}
+<div class="cell callout reporting">
+ 
+  <div class="hide" data-feed-template>
+    <div data-feed-content></div>
+  </div>
+
+</div>
+{{/ifpage}}
