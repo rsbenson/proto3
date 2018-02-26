@@ -33,6 +33,23 @@ $hero-full-screen-text-color: $white;
       }
     }
   }
+  .hero-units {
+    // height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../img/units_banner.jpg')no-repeat;
+    background-size: cover;
+    background-position: 30% 30%; 
+  
+    #hero-content-wrapper{
+      padding:5rem;
+      @include breakpoint(small only){
+        padding:1rem;
+      }
+    }
+  }
 
   // mix-blend-mode: multiply;
   // filter: grayscale(100%);
