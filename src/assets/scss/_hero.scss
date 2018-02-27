@@ -33,13 +33,14 @@ $hero-full-screen-text-color: $white;
       }
     }
   }
+  
   .hero-units {
     // height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: url('../img/units_banner.jpg')no-repeat;
+    background: url('../img/unit-banner.jpg')no-repeat;
     background-size: cover;
     background-position: 30% 30%; 
   
