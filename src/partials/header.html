@@ -13,7 +13,12 @@
           <button class="hambutton" type="button" data-open="offCanvas"></button>
 
         </span>
+        {{#ifpage 'index'}}
         <span class="menutext">Click Here For Menu</span>
+        {{/ifpage}}
+        {{#unlesspage 'index'}}
+        <span class="menutext1">Click Here For Menu</span>
+        {{/unlesspage}}
       </div>
       <div class="top-bar-right">
         <ul class="menu">
@@ -44,9 +49,10 @@
           <h1>4th Infantry Division</h1>
           {{/ifpage}}
           {{#ifpage '1sbct'}}
-          <div class="grid-x">
+          <div class="grid-x grid-padding-x">
             <div class="cell medium-10">
-            <h1>1st Stryker Brigade Combat Team</h1>
+            <h2 class="unit-header">1st Stryker Brigade Combat Team</h2>
+            <h3 class="unit-header">1SBCT</h3>
             </div>
             <div class="cell medium-2">
               <img src="{{root}}assets/img/crests/1-4Crest-Large.png">
